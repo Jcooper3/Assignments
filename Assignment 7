@@ -1,0 +1,57 @@
+1.
+
+import sys
+import datetime
+
+for line in sys.stdin:
+    data = line.strip().split("\t")
+
+    if len(data) == 6:
+        date, time, store, item, cost, payment = data
+        print("{0}\t{1}".format(item, cost))
+
+    x = datetime.datetime.now().time()
+    print("current time:")
+    print(data)
+    print("")
+
+2.
+
+import sys
+import datetime
+from datetime import timedelta
+
+for line in sys.stdin:
+    data = line.strip().split("\t")
+
+    if len(data) == 6:
+        date, time, store, item, cost, payment = data
+        print("{0}\t{1}".format(item, cost))
+
+    x = datetime.datetime.now().time()
+    print("current time:")
+    print(data)
+    print("")
+    timedelta(seconds=-60)
+    timedelta(years=2) 
+
+3.
+
+import sys
+import datetime
+from datetime import timedelta
+
+for line in sys.stdin:
+    data = line.strip().split("\t")
+
+    if len(data) == 6:
+        date, time, store, item, cost, payment = data
+        print("{0}\t{1}".format(item, cost))
+
+    x = datetime.datetime.now().time()
+    print("current time:")
+    print(data)
+    print("")
+    d = timedelta(microseconds=-1)
+    (d.days, d.seconds, d.microseconds)
+    (-1, 86399, 999999) 
