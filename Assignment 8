@@ -1,0 +1,24 @@
+import itertools
+
+print("Counting by a number.")
+for i in itertools.count(2, 2):
+    if i == 12:
+        break
+    else:
+        print(i, end=" ")
+
+print("\n")
+
+print("Cycling numbers.")
+iterable = [3, 6, 9, 12, 15, 18, 21]
+iter_obj = itertools.cycle(iterable)
+
+count = 0
+while count < len(iterable):
+    print(next(iter_obj))
+    count += 1
+
+print("\n")
+
+print("Repeating a number.")
+print(list(itertools.repeat(2, 5)))
